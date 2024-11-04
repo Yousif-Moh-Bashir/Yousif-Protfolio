@@ -10,7 +10,7 @@ function myMenuFunction(){
     else{
         menuBtn.className = "nav-menu";
     }
-   
+
 }
 
 // add shadow on navigation bar while scrolling
@@ -47,12 +47,12 @@ var typingEffect = new Typed(".typeText",{
 
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '80px',
+    distance: '40px',
     duration: 2000,
     reset: true
 })
 
-//  Home 
+//  Home
 
 sr.reveal('.featured-text-card',{})
 sr.reveal('.featured-name',{delay: 100})
@@ -61,7 +61,7 @@ sr.reveal('.featured-text-btn',{delay: 200})
 sr.reveal('.social-icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
 
-// projects 
+// projects
 
 sr.reveal('.project-box',{interval: 200})
 
@@ -73,7 +73,7 @@ sr.reveal('.top-header',{})
 
 const srLeft = ScrollReveal({
     origin: 'left',
-    distance: '80px',
+    distance: '40px',
     duration: 2000,
     reset: true
 })
@@ -85,7 +85,7 @@ srLeft.reveal('.contact-info',{interval: 100})
 
 const srRight = ScrollReveal({
     origin: 'right',
-    distance: '80px',
+    distance: '40px',
     duration: 2000,
     reset: true
 })
