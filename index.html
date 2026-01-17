@@ -6,10 +6,10 @@
         <!--unicons-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <!--style css-->
-        <link rel="stylesheet" href="asset/style.css">
+        <link rel="stylesheet" href="asset/css/style.css">
         <!--favicons-->
         <link rel="shortcut icon" href="" type="image/x-icon">
-        <title>Yousif Albashir</title>
+        <title>Dev | Yousif-Moh-Albashir</title>
     </head>
     <body>
 
@@ -23,7 +23,7 @@
                 <div class="nav-menu" id="myNaveMenu">
                     <ul class="nav-menu-list">
                         <li class="nav-list">
-                            <a href="#home" class="nav-link active-link">Home</a>
+                            <a href="#home" class="nav-link">Home</a>
                             <div class="circle"></div>
                         </li>
 
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
                 <div class="nav-button">
-                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                    <a href="asset/cv/Yousif_Albashir_Senior_Backend_Engineer.pdf" download class="btn btn-download" target="_blank">Download CV <i class="uil uil-import"></i></a>
                 </div>
                 <div class="nav-menu-btn">
                     <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="featured-name">
-                            <p>I'm <span class="typeText">Developer</span></p>
+                            <p>I'm <span class="typeText"></span>Developer</p>
                         </div>
 
                         <div class="featured-text-info">
@@ -70,13 +70,15 @@
                         </div>
                         <div class="featured-text-btn">
                             <button class="btn blue-btn">Hire Me</button>
-                            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                            <!--
+                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                            -->
+                            <a href="asset/cv/Yousif_Albashir_Senior_Backend_Engineer.pdf" download class="btn btn-download" target="_blank">Download CV <i class="uil uil-import"></i></a>
                         </div>
                         <div class="social-icons">
-                            <div class="icon"><i class="uil uil-instagram"></i></div>
                             <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                            <div class="icon"><i class="uil uil-dribbble"></i></div>
                             <div class="icon"><i class="uil uil-github-alt"></i></div>
+                            <div class="icon"><i class="uil uil-facebook-f"></i></div>
                         </div>
                     </div>
 
@@ -87,7 +89,7 @@
                     </div>
 
                     <div class="scroll-icon-box">
-                        <a href="#about" class="scroll-btn">
+                        <a href="#contact" class="scroll-btn">
                             <i class="uil uil-mouse-alt"></i>
                             <p>Scroll Down</p>
                         </a>
@@ -97,7 +99,7 @@
                 <!-- about -->
                 <section class="section" id="about">
                     <div class="top-header">
-                        <h1>About Me</h1>
+                        <h1 class="top-header-title">About Me</h1>
                     </div>
                     <div class="row">
                         <div class="col">
@@ -107,7 +109,7 @@
                                     additionally, I have experience working with content management systems (CMS) like wordpress .
                                 </p>
                                 <div class="about-btn">
-                                    <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                                    <a href="asset/cv/Yousif_Albashir_Senior_Backend_Engineer.pdf" download class="btn btn-download" target="_blank">Download CV <i class="uil uil-import"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +157,7 @@
                 <!-- project box -->
                 <section class="section" id="projects">
                     <div class="top-header">
-                        <h1>Projects</h1>
+                        <h1 class="top-header-title">Projects</h1>
                     </div>
                     <div class="project-container">
                         <div class="project-box">
@@ -179,10 +181,11 @@
                 <!-- contact box -->
                 <section class="section" id="contact">
                     <div class="top-header">
-                        <h1>Get in touch</h1>
+                        <h1 class="top-header-title">Get in touch</h1>
                         <span>Do you have a project in your mind, contact me here</span>
                     </div>
                     <div class="row">
+                        <!-- contact info
                         <div class="col">
                             <div class="contact-info">
                                 <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
@@ -190,14 +193,35 @@
                                 <p><i class="uil uil-phone"></i>+966 574 640 211</p>
                             </div>
                         </div>
+                        -->
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+
+                                <p>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yousifalbashir9@gmail.com" target="_blank">
+                                        <i class="uil uil-envelope"></i>
+                                        yousifalbashir9@gmail.com
+                                    </a>
+                                </p>
+
+                                <p>
+                                    <a href="tel:+966574640211">
+                                        <i class="uil uil-phone"></i>
+                                        +966 574 640 211
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
                         <div class="col">
                             <div class="form-control">
                                 <div class="form-inputs">
-                                    <input type="text" class="input-field" placeholder="Name">
-                                    <input type="text" class="input-field" placeholder="Email">
+                                    <input type="text" class="input-field" placeholder="Name" required>
+                                    <input type="text" class="input-field" placeholder="Email" required>
                                 </div>
                                 <div class="text-area">
-                                    <textarea placeholder="Message" name="message"></textarea>
+                                    <textarea placeholder="Message" name="message" required></textarea>
                                 </div>
                                 <div class="form-button">
                                     <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
@@ -210,7 +234,7 @@
             </main>
             <!--main end-->
 
-            <!--footer start-->
+            <!--footer start
                 <footer>
                     <div class="top-footer">
                         <p>Yousif Albashir .</p>
@@ -241,7 +265,28 @@
                         <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Yousif Albashir</a> - All right reserved</p>
                     </div>
                 </footer>
+            footer end-->
+
+            <!--footer start-->
+                <footer class="footer-section">
+                    <div class="section-content">
+                        <p class="copyright-text">Copyright &copy; <a href="#home" class="footer-link"><span class="underline-animate">Yousif Albashir</span></a> - All right reserved</p>
+                        
+                        <div class="social-link-list">
+                            <a href="https://www.linkedin.com/in/yousif-albashir-467093241/" target="_blank" class="social-link"><i class="uil uil-linkedin-alt"></i></a>
+                            <a href="https://github.com/Yousif-Moh-Bashir" target="_blank" class="social-link"><i class="uil uil-github-alt"></i></a>
+                            <a href="https://www.facebook.com/yosifmohammed.bashier" target="_blank" class="social-link"><i class="uil uil-facebook-f"></i></a>
+                        </div>
+
+                        <p class="copyright-text">
+                            <a href="#" class="policy-link">Privacy Policy</a>
+                            <span class="separator">.</span>
+                            <a href="#" class="policy-link">Terms & Conditions</a>
+                        </p>
+                    </div>
+                </footer>
             <!--footer end-->
+
         </div>
 
         <!--typed js link-->
@@ -249,6 +294,6 @@
         <!--scroll reveal js-->
         <script src="https://unpkg.com/scrollreveal"></script>
         <!--main js-->
-        <script src="asset/script.min.js"></script>
+        <script src="asset/js/script.min.js"></script>
     </body>
 </html>

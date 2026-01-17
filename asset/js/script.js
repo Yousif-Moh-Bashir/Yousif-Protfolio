@@ -117,3 +117,14 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 
+// remove menu mobile
+const navLink = document.querySelectorAll('.nav-link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('myNaveMenu')
+
+    navMenu.classList.remove('responsive')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+

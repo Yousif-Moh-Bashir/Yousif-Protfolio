@@ -23,10 +23,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
+    user-select: none;
+    
 }
 /* smooth scroll */
 html{
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* change the scroll bar design */
@@ -48,7 +55,6 @@ html{
     background: #bbb;
 }
 
-
 /* global button design */
 
 .btn{
@@ -59,6 +65,7 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    font-size: 13px;
 }
 
 .btn>i{
@@ -358,6 +365,16 @@ nav{
     color: #999;
 }
 
+/* .top-header-title::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 30px;
+    background: var(--text-color-third);
+} */
+
 h3{
     font-size: 20px;
     font-weight: 600;
@@ -365,6 +382,7 @@ h3{
     margin-bottom: 15px;
 }
 
+/* about info box */
 .about-info{
     position: relative;
     display: flex;
@@ -388,7 +406,7 @@ h3{
     color: #777;
 }
 
-.about-btn button{
+.about-btn a{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -397,7 +415,7 @@ h3{
     border-radius: 30px;
 }
 
-.about-btn button:hover{
+.about-btn a:hover{
     background: var(--first-color-hover);
 }
 
@@ -494,6 +512,68 @@ h3{
 
 /* contact box */
 
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* .contact-info a:hover {
+    color: var(--first-color-hover);
+    text-decoration: underline;
+} */
+
+/* contact box */
+
+.contact-info a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+/* الأيقونة */
+.contact-info a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* الخط السفلي المتحرك */
+.contact-info a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--first-color-hover);
+    transition: width 0.35s ease;
+}
+
+/* Hover */
+
+.contact-info i {
+    color: inherit !important;
+}
+.contact-info a:hover {
+    color: var(--first-color-hover);
+}
+
+.contact-info a:hover::after {
+    width: 100%;
+}
+
+.contact-info a:hover i {
+    transform: translateX(5px) rotate(-5deg);
+}
+
+.contact-info a:hover {
+    text-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+}
+/* end contact box */
+
 .contact-info{
     position: relative;
     display: flex;
@@ -589,7 +669,7 @@ textarea{
     rotate: -45deg;
 }
 
-/* footer box */
+/* footer box 
 
 footer{
     display: flex;
@@ -629,19 +709,78 @@ footer{
 .bottom-footer{
     font-size: 14px;
     margin-top: 10px;
+} */
+
+/* footer box */
+.footer-section{
+    padding: 20px 0;
+    padding-inline: 9vw;
+    background: var(--text-color-third);
 }
 
+.footer-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+    color: var(--color-white);
+    transition: 0.2s ease;
+}
 
+.footer-section .social-link-list{
+    display: flex;
+    gap: 25px;
+}
 
+.footer-section .social-link-list .social-link {
+    font-size: 14px;
+}
 
+.footer-section .social-link-list .social-link:hover ,
+.footer-section .copyright-text .policy-link:hover {
+    color: var(--text-color-second);
+}
 
+.footer-section .copyright-text .separator {
+    /* margin: 0 5px; */
+    color: var(--color-white);
+    font-size: xx-large;
+}
 
+.footer-section .copyright-text .footer-link {
+    color: var(--text-color-second);
+    transition: width 0.35s ease;
+}
 
+.footer-section .copyright-text .footer-link:hover {
+    color: var(--color-white);
+}
 
+/* underline */
+.underline-animate {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
 
+.underline-animate::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: width 0.35s ease;
+}
 
-
+/* Hover */
+.underline-animate:hover::after {
+    width: 100%;
+}
 
 /* ------------------------------------------------------------------------ */
 
@@ -656,6 +795,12 @@ footer{
     .image, .image img{
         width: 320px;
         height: 320px;
+    }
+
+    .footer-section .section-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
 
 } /* end 1040px */
